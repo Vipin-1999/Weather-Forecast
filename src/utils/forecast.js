@@ -7,9 +7,10 @@ const forecast = (latitude, longitude, callback) => {
             callback('Unable to connect to weather services', undefined)
         else  if(body.error)
             callback(body.error, undefined)
-        else
-            callback(undefined, body.currently.summary)
-    })  
+        else    {
+            callback(undefined, body.currently.summary + '. ')
+        }
+        })  
 }
 
 module.exports = forecast
