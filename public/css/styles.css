@@ -49,6 +49,12 @@ header a {
     text-decoration: none;
 }
 
+h3 {
+    color: #615d5d;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
 .portrait {
     width : 250px;
 }
@@ -56,12 +62,14 @@ header a {
 input   {
     border : 1px solid #cccccc;
     padding : 8px;
+    max-width: 32px;
 }
 
 button  {
     cursor: pointer;
     border : 1px solid #888888;
     background : #888888;
+    text-align: center;
     color : white;
     padding : 8px;
 }

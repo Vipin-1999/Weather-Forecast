@@ -1,33 +1,18 @@
 const weatherForm = document.querySelector('form')
-const search = document.querySelector('input')
+const search1 = document.querySelector("input[name='numerator1']")
+const search2 = document.querySelector("input[name='denominator1']")
+const input = document.querySelector('#inputs')
+const sum = document.querySelector('sum')
+
 const message = document.querySelector('#message')
-const messageLocation = document.querySelector('#location')
-const messageForecast = document.querySelector('#forecast')
-const messageLatitude = document.querySelector('#latitude')
-const messageLongitude = document.querySelector('#longitude')
-const messageCoordinates = document.querySelector('#coordinates')
 
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
-    var location = search.value
+    var numerator = search1.value
+    var denominator = search2.value
+    n1 = fraction.input(numerator, denominator)
 
-    message.textContent = 'Showing forecast..'
-    messageLocation.textContent = ''
-    messageForecast.textContent = ''
-    messageLatitude.textContent = ''
-    messageLongitude.textContent = ''
-
-    fetch('/weather?address='+location).then((response) => {
-        response.json().then((data) =>  {
-            if(data.error)  
-                messageOne.textContent = data.error
-            else    {
-                messageLocation.textContent = 'Location : ' + data.Location
-                messageForecast.textContent = 'Forecast : ' + data.Forecast
-                messageCoordinates.textContent = 'Coordinates are :'
-                messageLatitude.textContent = 'Latitude : ' + data.Coordinates.Latitude
-                messageLongitude.textContent = 'Longitude : ' + data.Coordinates.Longitude
-            }
-        })
-    })
+    message.textContent = 'List of fractions input: '
+    input.textContent = '[' + numerator + '/' + denominator + ']'
+    sum.textContent = ''
 })
