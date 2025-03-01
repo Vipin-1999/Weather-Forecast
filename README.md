@@ -1,4 +1,4 @@
-# Weather Web Server
+# Weather Forecast
 
 A simple web application that provides weather forecasts for any given location. It leverages Node.js and Express for the backend and uses Handlebars (hbs) for rendering dynamic web pages. By integrating with external APIs like Mapbox for geocoding and Dark Sky for weather data, this project simplifies the process of fetching up-to-date weather information, helping users quickly obtain accurate forecasts based on their address input.
 
@@ -20,8 +20,8 @@ A simple web application that provides weather forecasts for any given location.
 ## Installation & Setup Instructions
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/Vipin-1999/Web-Server.git
-   cd Web-Server
+   git clone https://github.com/Vipin-1999/Weather-Forecast.git
+   cd Weather-Forecast
    ```
 
 2. **Install Dependencies:**
