@@ -1,6 +1,6 @@
-# Contributing to Weather Web Server
+# Contributing to Weather Forecast
 
-Thank you for considering contributing to the Weather Web Server project! Your contributions help improve the project and make it better for everyone.
+Thank you for considering contributing to the Weather Forecast project! Your contributions help improve the project and make it better for everyone.
 
 ## How to Contribute
 
@@ -19,7 +19,7 @@ We welcome pull requests that improve the project. Here’s a quick guide on how
 1. **Fork** the repository.
 2. **Clone** your fork:
    ```bash
-   git clone https://github.com/Vipin-1999/Web-Server.git
+   git clone https://github.com/<your-username>/Weather-Forecast.git
    ```
 3. **Create a new branch** for your changes:
    ```bash
